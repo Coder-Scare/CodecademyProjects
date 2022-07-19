@@ -1,0 +1,21 @@
+.banner {
+    background-color: rgb(196, 86, 196);
+    color: white;
+    margin-top: 75px;
+    text-align: center;
+    padding: 100px 0;
+}
+
+#small-bomb {
+    height: 100px;
+    width: 100px;
+}
+
+#getit {
+    color:rgb(143, 60, 143);
+    font-size: 100px;
+}
+
+.bold {
+    font-weight: 900;
+}

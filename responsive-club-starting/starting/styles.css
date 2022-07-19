@@ -1,0 +1,445 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500;600&family=Macondo&display=swap');
+
+/* Global Styles */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Inconsolata', monospace;
+    color: #f5f5f5;
+    line-height: 1.6;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: #f5f5f5;
+}
+
+h1, h2 {
+    font-weight: 600;
+    line-height: 1.2;
+    margin: 10px 0;
+}
+
+p {
+    margin: 10px 0;
+}
+
+img {
+    width: 100%;
+}
+
+/* Global*/
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: auto;
+    padding: 0 40px;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.grid {
+    display: grid;
+}
+
+.center {
+    text-align: center;
+}
+
+.card {
+    background-color: black;
+    padding: 20px 16px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0px 20px 0 rgba(255, 255, 255, 0.2);
+    transition: 0.3s;
+    width: 75%;
+
+}
+
+.card:hover {
+    box-shadow: 0 0px 40px 0 rgba(255, 255, 255, 0.2);
+  }
+
+
+
+button {
+    padding: 16px 32px;
+    border-radius: 5px;
+    background-color: #f5f5f5;
+    color: black;
+    font-size: 24px;
+    opacity: 1;
+    transition: 0.3s;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: .75;
+}
+
+/* Main Styles */
+.navbar {
+    background-color: #000;
+    height: 70px;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}
+
+.navbar ul {
+    display: flex;
+}
+
+.navbar a {
+    color: #fff;
+    padding: 10px;
+    margin: 0 5px;
+}
+
+.navbar a:hover {
+    border-bottom: 2px #fff solid;
+}
+
+.navbar .flex {
+    justify-content: space-between;
+}
+
+.logo img {
+    width: 60px;
+    margin-right: 10px;
+}
+
+/* Splash */
+
+.main-content {
+    position: relative;
+    top: 70px;
+}
+
+.splash {
+    background-color: black;
+    background-image: url(resources/images/Masterchief\ splash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:top ;
+    height: 800px;
+}
+
+.splash .container {
+    justify-content: flex-start;
+}
+
+.splash .container h1 {
+    background-color: #000;
+}
+
+/*About */
+
+.about {
+    min-height: 380px;
+    background-color: rgb(8, 30, 50);
+}
+
+.about .container {
+    max-width: 100%;
+    padding: 0;
+}
+
+.about .grid {
+    grid-template-columns: repeat(auto-fit, minmax(440px, 1fr));
+}
+
+.about-text {
+    padding: 50px 20px;
+    background-image: url(resources/images/back4content.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.about .filter {
+    background-color: rgba(0,0,0,.75);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.about-text h2 {
+    padding-bottom: 10px;
+}
+
+.about-img {
+    min-height: 380px;
+}
+.about-img {
+    background-image: url(resources/images/halo_infinite_multiplayer_1.jpg);
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: cover;
+}
+
+
+
+/* Meetings */
+.meetings {
+    background-color: #000;
+}
+
+.meetings div {
+    overflow: hidden;
+}
+
+.meetings .container{
+    max-width: 100%;
+    padding: 0;
+}
+
+.meetings .grid {
+    grid-auto-columns: 1fr;
+    grid-template-areas:
+    'one'
+    'two'
+    'three';
+}
+
+.meeting-info {
+    grid-area: one;
+  }
+
+.stats-img {
+    grid-area: two;
+}
+
+.stats-img img{
+    height: 100%;
+}
+
+.samurai-img {
+    grid-area: three;
+}
+
+.samurai-img img{
+    height: 100%;
+}
+
+.grid-col-span-2 {
+    grid-column: span 2;
+}
+
+.meeting-info {
+    padding: 40px 20px;
+}
+
+/* Join Us */
+.join-us {
+    background-color: rgb(5, 5, 31);
+}
+
+.join-us .container {
+    max-width: 100%;
+    padding: 0;
+}
+
+.join-us .grid {
+    grid-template-areas: 
+    'join'
+    'chief';
+}
+
+.join-container {
+    grid-area: join;
+    min-height: 400px;
+}
+
+.join-container .card h2 {
+    margin-bottom: 20px;
+}
+
+.the-chief {
+    grid-area: chief;
+    overflow: hidden;
+    max-height: 400px;
+}
+
+.the-chief img{
+    height: 100%;  
+}
+
+/* Footer */
+.footer {
+    background-color: black;
+}
+
+.footer .container {
+    max-width: 100%;
+    padding: 0;
+}
+
+.footer .grid {
+    grid-auto-columns: 1fr;
+    grid-template-areas:
+    'info'
+    'halo';
+    height: 100%;
+}
+
+@media (min-width: 1100px) {
+    .footer .grid {
+        grid-auto-columns: 4fr 1fr;
+        grid-template-areas:
+        'info halo';   
+    }
+
+ 
+}
+
+@media (min-width: 900px) {
+    .footer .grid {
+        grid-auto-columns: 3fr 1fr;
+        grid-template-areas:
+        'info halo';   
+    }
+
+    .info-container {
+        text-align: center;
+    }
+
+    .halo-online-container img {
+        max-width: 300px;
+        height: 100%;
+    }
+}
+
+.info-container {
+    grid-area: info;
+    text-align: center;
+    padding: 40px 0;
+}
+
+.info-container h3 {
+    font-size: 20px;
+    padding-bottom: 5px;
+}
+
+.info-container img {
+    width: 50px;
+}
+
+.halo-online-container {
+    grid-area: halo;
+    overflow: hidden;
+    max-height: 300px;
+}
+
+.halo-online-container img {
+    max-width: 100%;
+    height: 100%;
+}
+
+
+
+/* Media Queries */
+@media only screen and (max-width: 700px) {
+    .container {
+        max-width: 100%;
+        padding: 0 10px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .logo img {
+        width: 50px;
+    }
+    .logo h1 {
+        inline-size: 100px;
+        line-height: 1;
+        font-size: 24px;
+        overflow-wrap: break-word;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .logo h1 {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .container ul li:nth-child(4) {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 310px) {
+    .container ul li:nth-child(3) {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 430px) {
+    .about .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }   
+}
+
+@media (min-width: 800px) {
+    .meetings .grid {
+        grid-template-areas:
+        'one one two'
+        'three three two'
+    }
+ 
+    .meetings .grid {
+     grid-template-columns: repeat(3, 1fr);
+ }
+ 
+     .stats-img {
+         background-image: url("resources/images/haloChief\ armour\ stats.jpg");
+         background-repeat: no-repeat;
+         background-size: cover;
+         background-position: center;
+     }
+ 
+     .stats-img img{
+         display: none;
+     }
+ }
+
+ @media (min-width: 1000px) {
+    .join-us .grid {
+        grid-auto-columns: 1fr;
+        grid-template-areas: 
+        'join chief';
+    }
+}
+
+@media only screen and (max-width: 280px) {
+    .info-container h3 {
+        font-size: 16px;
+    }
+}
+
+
+
+
+
+
+
