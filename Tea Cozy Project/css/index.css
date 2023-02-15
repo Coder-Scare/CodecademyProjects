@@ -50,7 +50,7 @@ body {
     position: relative;
     text-align: center;
     height: 700px;
-    background-image: url(/images/img-mission-background.jpg);
+    background-image: url(../images/img-mission-background.jpg);
     background-position: center top;
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -95,7 +95,7 @@ body {
 }
 
 .locations {
-    background-image: url(/images/img-locations-background.jpg);
+    background-image: url(../images/img-locations-background.jpg);
     background-repeat: no-repeat;
     background-position: center -100px;
     background-size: 100% auto;
